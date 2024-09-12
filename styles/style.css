@@ -41,6 +41,10 @@ nav ul li{
     font-size: 80%;
 
 }
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255,96,61);
+}
 nav ul li:hover{
     background-color: rgb(119, 119, 119);
     
@@ -58,6 +62,7 @@ nav ul li:hover{
 }
 .camisas-menor img:hover{
     opacity: 100%;
+    border: 1px solid rgb(255,96,61);
 }
 .camisas{
     margin-top: 30px;
@@ -68,7 +73,7 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
 }
-.info #preco{
+.info #precoProduto{
     color: rgb(255,96,61);
     font-size: 20px;
     font-weight: bold;

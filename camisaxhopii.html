@@ -3,6 +3,7 @@
 <head>
     <title>xhopii_camisa</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="Javascript/javacamisas.js"></script>
 </head>
 <body>
 <header>
@@ -14,30 +15,31 @@
         <li>Home</li>
         <li>Cadastro cliente</li>
         <li>Ver clientes</li>
+        <li><a href="xhopiilogin.html">Login</a></li>
     </ul>
 </nav>
 <section class="camisas">
 <section class="camisas-menor">
-    <img src="img/camisas/produto1.png" alt="">
-    <img src="img/camisas/produto4.png" alt="">
-    <img src="img/camisas/produto3.png" alt="">
-    <img src="img/camisas/produto2.png" alt="">
-    <img src="img/camisas/produto5.png" alt="">
+    <img src="img/camisas/produto1.png" alt="" onclick="selecionarimgproduto(this)">
+    <img src="img/camisas/produto4.png" alt="" onclick="selecionarimgproduto(this)">
+    <img src="img/camisas/produto3.png" alt="" onclick="selecionarimgproduto(this)">
+    <img src="img/camisas/produto2.png" alt="" onclick="selecionarimgproduto(this)">
+    <img src="img/camisas/produto5.png" alt="" onclick="selecionarimgproduto(this)">
 </section>
 <section class="camisa-maior">
-    <img src="img/camisas/produto1.png" alt="">
+    <img id="imagem-principal" src="img/camisas/produto1.png" alt="">
 </section>
 <section class="info">
     <h1>Camisa Desenvolvedor Front-End CSS</h1>
-    <p id="preco">R$56,90</p>
-    <p>171 peças restantes</p>
+    <p id="precoProduto">R$56,90</p>
+    <p id="qtdDisponivel">171 peças restantes</p>
     <p>Modelos</p>
     <section class="def-cor">
-        <button>Preto</button>
-        <button>Azul</button>
-        <button>Verde</button>
-        <button>Cinza</button>
-        <button>Rosa</button>
+        <button id="btnmodeloPreto" onclick="mudarPreco(this)">Preto</button>
+        <button id="btnmodeloAzul" onclick="mudarPreco(this)">Azul</button>
+        <button id="btnmodeloVerde" onclick="mudarPreco(this)">Verde</button>
+        <button id="btnmodeloCinza" onclick="mudarPreco(this)">Cinza</button>
+        <button id="btnmodeloRosa" onclick="mudarPreco(this)">Rosa</button>
     </section>
     <p>Tamanhos</p>
     <section class="def-tamanho">
