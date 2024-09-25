@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(181, 181, 181);
+}
+header{
+    width: 100%;
+    background-color: orangered;
+    margin-bottom: 2em;
+}
+
+header .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    cursor: pointer;
+}
+
+header .cabecalho .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header .cabecalho .logo img{
+    height: 5em;
+    width: 5em;
+}
+
+header .cabecalho .logo p{
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+header .cabecalho .opcao-sair a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .menu-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(255, 115, 0);
+    
+}
+
+header .menu-navegacao ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header .menu-navegacao ol li{
+    cursor: pointer;
+}
+
+header .menu-navegacao ol li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.75em 1.25em;
+    transition: background-color 0.3s;
+
+}
+
+header .menu-navegacao ol li a:hover{
+    background-color: rgba(222, 222, 222, 0.386);
+}
+
+main .cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1em;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 45em;
+}
+
+main .cadastro form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+main .cadastro form h1{
+    color: orangered;
+}
+
+main .cadastro form label{
+    margin-bottom: 1.5em;
+}
+
+main .cadastro form input{
+    height: 2em;
+    width: 25em;
+    border: 2px solid rgb(209, 207, 207);
+    padding-left: 2em;
+}
+
+main .cadastro .foto-perfil{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .cadastro .foto-perfil p{
+   color: orangered;
+   font-weight: bold;
+   margin-bottom: 1em;
+
+}
+
+main .cadastro .foto-perfil .botao-arquivo {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+main .cadastro .foto-perfil .botao-arquivo p{
+    font-size: 12px;
+    margin-top:1em;
+    margin-left: 1em;
+    color: black;
+}
+
+main .cadastro .foto-perfil .botao-arquivo button{
+    padding: 8px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    color: orangered;
+    background-color: white;
+    cursor: pointer;
+}
+
+main .cadastro .botao-cadastrar{
+    margin-top: 2em;
+}
+
+main .cadastro .botao-cadastrar button{  
+    width: 20em;
+    height: 2.5em;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    margin-left: 2.5em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(224, 223, 223);
+    height: 23em;
+    margin-top: 2em;
+}
+
+footer .sessao-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer .atendimento-cliente h5{
+    margin-bottom: 2em;
+}
+
+footer .atendimento-cliente ol{
+    list-style-type: none;
+}
+
+footer .atendimento-cliente ol li{
+    margin-bottom: 4px;
+}
+
+footer .atendimento-cliente ol li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+footer .sobre-xhopii h5{
+    margin-bottom: 2em;
+}
+
+footer .sobre-xhopii ol{
+    list-style-type: none;
+}
+
+footer .sobre-xhopii ol li{
+    margin-bottom: 4px;
+}
+
+footer .sobre-xhopii ol li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+footer .forma-pagamento{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .forma-pagamento h5{
+    margin-bottom: 2em;
+}
+
+footer .forma-pagamento img{
+    width: 2.5em;
+    height: 2em;
+    margin: 2px;
+    cursor: pointer;
+}
+
+footer .siga-nos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .siga-nos h5{
+    margin-bottom: 2em;
+}
+
+footer .siga-nos img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+footer .outro-cliente{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .outro-cliente h5{
+    margin-bottom: 2em;
+}
+
+footer .outro-cliente img{
+    margin-bottom: 1em;
+    width: 4em;
+    height: 3em;
+    cursor: pointer;
+}
+
+footer .direitos-reservados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+footer .direitos-reservados hr {
+    width: 80%; 
+    margin: 10px auto;
+    border: none;
+    border-top: 2px solid #a9a9a9; 
+}
+
+footer .direitos-reservados p {
+    font-size: 12px;
+    font-weight: bold;
+}

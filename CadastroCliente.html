@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cadastroCliente.css" rel="stylesheet" type="text/css">
+    <title>Cadastro Cliente</title>
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <section class="logo">
+                <img src="img/logo.png">
+                <p>Xhopii</p>
+            </section>
+            <section class="opcao-sair">
+                <p><a href="login.html">Sair</a></p>
+            </section>
+        </section>
+
+        <nav class="menu-navegacao">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastroCliente.html">Cadastro Cliente</a></li>
+                <li><a href="cadastroFuncionario.html">Cadastro Funcionário</a></li>
+                <li><a href="cadastroProduto.html">Cadastro Produto</a></li>
+                <li><a href="#">Ver Clientes</a></li>
+                <li><a href="#">Ver Funcionário</a></li>
+                <li><a href="visualizarPorduto.html">Ver Produto</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cadastro">
+            <form>
+                <h1>Cadastrar Cliente</h1>
+                <label for="nome"></label>
+                <input type="text" id="name" name="nome" placeholder="Nome" required>
+                <label for="sobreNome"></label>
+                <input type="text" id="sobreNome" name="sobreNome" placeholder="Sobrenome" required>
+                <label for="cpf"></label>
+                <input type="number" id="name" name="cpf" placeholder="CPF" required>
+                <label for="dataNascimento"></label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+                <label for="telefone"></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00)0000-0000">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="senha"></label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </form>
+            <section class="foto-perfil">
+                <p>Selecionar foto de Perfil:</p>
+                <section class="botao-arquivo">
+                    <button>Escolher arquivo</button>
+                    <p>Nenhum arquivo escolhido</p>
+                </section>
+            </section>
+            <section class="botao-cadastrar">
+                <button>CADASTRAR</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="sessao-rodape">
+            <section class="atendimento-cliente">
+                <h5>ATENDIMENTO AO CLIENTE</h5>
+                <ol>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ol>
+            </section>
+
+            <section class="sobre-xhopii">
+                <h5>SOBRE A XHOPII</h5>
+                <ol>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Aliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Empresa</a></li>
+                </ol>
+            </section>
+
+            <section class="forma-pagamento">
+                <h5>PAGAMENTO</h5>
+                <section>
+                    <img src="img/pix.png" title="Pix">
+                    <img src="img/boleto.png" title="Boleto">
+                    <img src="img/americanExpress.png" title="American Express">
+                </section>  
+                <section>
+                    <img src="img/visa.png" title="Visa">
+                    <img src="img/mastercard.png" title="MasterCard">
+                    <img src="img/hipercard.png" title="HiperCard">
+                </section>
+                <section>
+                    <img src="img/elo.png" title="Elo">
+                </section>
+            </section>
+
+            <section class="siga-nos">
+                <h5>SIGA-NOS</h5>
+                <img src="img/instagram.png" title="Instagram">
+                <img src="img/twitter.png" title="Twitter">
+                <img src="img/facebookpreto.png" title="Facebook">
+                <img src="img/youtube.png" title="Youtube">
+                <img src="img/linkdin.png" title="Linkdin">
+            </section>
+
+            <section class="outro-cliente">
+                <h5>ATENDIMENTO AO CLIENTE</h5>
+                <img src="img/qrcode.png" title="QR Code">
+                <img src="img/googlestore.png" title="App Store">
+            </section>
+            
+        </section>
+        
+        <section class="direitos-reservados">
+            <hr>
+            <p>©2023 Xhopii. Todos os direitos acadêmicos reservados</p>
+        </section>
+    </footer>
+</body>
+</html>
