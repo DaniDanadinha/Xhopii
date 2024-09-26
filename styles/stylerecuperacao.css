@@ -1,7 +1,7 @@
 *{
     margin: 0;
     font-family: Helvetica, Arial, Sans-serif;
-    background-color: rgb(215,215,215);
+
 }
 body {
     font-family: Helvetica, Arial, Sans-serif;
@@ -10,19 +10,19 @@ body {
 }
 
 header {
-    background-color: rgb(215,215,215); /* Cor de fundo do cabeçalho */
+    background-color: rgb(215,215,215);
     padding: 5px;
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: flex-start; /* Centraliza verticalmente */
-    position: relative; /* Necessário para posicionamento absoluto do texto de ajuda */
+    align-items: center; 
+    justify-content: flex-start; 
+    position: relative; 
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Espaçamento entre o logo e o título */
+    margin-right: 20px; 
     margin-left: 200px;
 
 }
@@ -32,8 +32,7 @@ header {
 
 .logo img {
     width: 50px; /* Tamanho do logo */
-    height: auto;
-    margin-right: 10px; /* Espaço entre o logo e o texto */
+    margin-right: 10px;
 }
 
 .logo h1 {
@@ -42,15 +41,15 @@ header {
 
 #entre {
     font-size: 28px;
-    color:rgb(0,0,0,); /* Cor do texto do título */
-    margin-bottom: 10px; /* Espaçamento entre o título e a ajuda */
+    color:rgb(0,0,0,);
+    margin-bottom: 10px; 
 }
 
-/* Estilização e posicionamento do texto de ajuda */
+
 #help {
     font-size: 14px;
-    color: rgb(255,96,61); /* Cor do texto de ajuda */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    color: rgb(255,96,61);
+    cursor: pointer; 
     position: absolute;
     bottom: 20px; 
     right: 200px; 
@@ -60,57 +59,116 @@ header {
     text-decoration: none; 
 }
 .meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 35vw;
+    height: 50vw;
+}
+.meio .redefinicao{
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(145, 142, 142);
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    width: 40%;
+    height: 18vw;
+    background-color: rgb(255, 255, 255);
+}
+.meio .redefinicao img{
+    width: 9vh;
+}
+
+.meio .dados{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5vw;
+    
+}
+.meio .titulo{
+    text-transform: uppercase;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+}
+.meio .dados h1{
+    margin: 3%;
+}
+.meio .dados input{
+    margin-bottom: 10%;
+    height: 25px;
+    width: 100%;
+
+}
+.meio .dados button{
+    background-color:  rgb(255,96,61);
+    height: 25px;
+    width: 104%;
 }
 footer{
     display: flex;
     background-color: rgb(215,215,215);
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 30px;
     flex-direction: column;
-
 }
 footer a{
     text-decoration: none;
     color: rgb(169,169,169);
+    margin-top: 10px;
 }
 footer p{
     color: rgb(169,169,169);
-    margin-top: 20px;
+    margin-top: 0px;
 }
 footer .infos{
-    display: flex;
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
     background-color: rgb(215,215,215); 
 
 }
 footer .infos h1{
     font-size: 10px;
-    margin-right: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 
 }
 footer .infos p{
+    margin-top: 0;
     font-size: 11px;
     margin-bottom: 5px;
-    color: rgb(169, 169, 169);
+    color: rgb(134, 128, 128);
+    cursor: pointer;
+}
+footer .infos p:hover{
+    color: rgb(255,96,61);
 }
 footer .pagamento{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+}
+footer .pagamento #bancos{
+    display: flex;
+    flex-flow: wrap;
+    width: 200px;
+    
 }
 footer .redes{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+}
+footer .redes a:hover{
+    color: rgb(255,96,61) ;
 }
 footer .atendimento2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
+footer .atendimento2 #aplicativo{
+    display: flex;
+    flex-direction: column;
+
+}
+
