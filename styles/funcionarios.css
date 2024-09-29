@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    font-family: helvetica,arial,sans-serif;
+}
+header{
+    background-color: rgb(255,96,61);
+    display: flex;
+
+}
+header h1{
+    color: rgb(255,255,255);
+    display: flex;
+    align-items: end;
+}
+header img{
+    height: 4vw;
+}
+nav{
+    background-color: rgb(215,215,215);
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+nav ul li{
+    margin: 10px;
+    height: 5vh;
+    width: 8vw;
+    color: rgb(255,96,61);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 80%;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255,96,61);
+}
+nav ul li:hover{
+    background-color: rgb(119, 119, 119);
+    
+
+}
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+main .main__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+main .main__grid .main__xhoppi__funcionario{
+    margin: 5px;
+    border: 1px, solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+main .main__grid .main__xhoppi__funcionario p{
+    margin-left: 10px;
+}
+main .main__grid .main__xhoppi__funcionario h3{
+    margin: 10px;
+}
+#entre {
+    font-size: 28px;
+    color:rgb(0,0,0,);
+    margin-bottom: 10px; 
+}
+
+
+#help {
+    font-size: 14px;
+    color: rgb(255,96,61);
+    cursor: pointer; 
+    position: absolute;
+    bottom: 20px; 
+    right: 200px; 
+}
+
+#help:hover {
+    text-decoration: none; 
+}
+footer{
+    display: flex;
+    background-color: rgb(215,215,215);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(169,169,169);
+    margin-top: 10px;
+}
+footer p{
+    color: rgb(169,169,169);
+    margin-top: 20px;
+}
+footer .infos{
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(215,215,215); 
+
+}
+footer .infos h1{
+    font-size: 10px;
+    margin-bottom: 20px;
+
+}
+footer .infos p{
+    margin-top: 0;
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: rgb(134, 128, 128);
+    cursor: pointer;
+}
+footer .infos p:hover{
+    color: rgb(255,96,61);
+}
+footer .pagamento{
+    display: flex;
+    flex-direction: column;
+}
+footer .pagamento #bancos{
+    display: flex;
+    flex-flow: wrap;
+    width: 200px;
+    
+}
+footer .redes{
+    display: flex;
+    flex-direction: column;
+}
+footer .redes a:hover{
+    color: rgb(255,96,61) ;
+}
+footer .atendimento2{
+    display: flex;
+    flex-direction: column;
+}
+footer .atendimento2 #aplicativo{
+    display: flex;
+    flex-direction: column;
+
+}

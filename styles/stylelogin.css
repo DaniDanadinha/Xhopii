@@ -119,8 +119,12 @@ header {
 }
 .login .opcoes {
     margin-top: 20px;
-    padding:10px;
+    padding:9px;
 
+}
+.login .opcoes #entrarOP{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .login .opcoes button{
     height: 25px;
