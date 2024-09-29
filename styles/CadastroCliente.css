@@ -171,120 +171,86 @@ main .cadastro .botao-cadastrar button{
 }
 
 footer{
-    background-color: rgb(224, 223, 223);
-    height: 23em;
-    margin-top: 2em;
-}
-
-footer .sessao-rodape{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2em;
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: rgb(215,215,215);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
 }
 
-footer .atendimento-cliente h5{
-    margin-bottom: 2em;
-}
-
-footer .atendimento-cliente ol{
-    list-style-type: none;
-}
-
-footer .atendimento-cliente ol li{
-    margin-bottom: 4px;
-}
-
-footer .atendimento-cliente ol li a{
+footer a{
     text-decoration: none;
-    color: black;
-    font-size: 13px;
+    color: rgb(169,169,169);
+    margin-top: 10px;
 }
 
-footer .sobre-xhopii h5{
-    margin-bottom: 2em;
+footer p{
+    color: rgb(169,169,169);
+    margin-top: 20px;
 }
 
-footer .sobre-xhopii ol{
-    list-style-type: none;
+footer .infos{
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(215,215,215); 
+
 }
 
-footer .sobre-xhopii ol li{
-    margin-bottom: 4px;
+footer .infos h1{
+    font-size: 10px;
+    margin-bottom: 20px;
+
 }
 
-footer .sobre-xhopii ol li a{
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-}
-
-footer .forma-pagamento{
-    display: flex;
-    flex-direction: column;
-}
-
-footer .forma-pagamento h5{
-    margin-bottom: 2em;
-}
-
-footer .forma-pagamento img{
-    width: 2.5em;
-    height: 2em;
-    margin: 2px;
+footer .infos p{
+    margin-top: 0;
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: rgb(134, 128, 128);
     cursor: pointer;
 }
 
-footer .siga-nos{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+footer .infos p:hover{
+    color: rgb(255,96,61);
 }
 
-footer .siga-nos h5{
-    margin-bottom: 2em;
-}
-
-footer .siga-nos img{
-    width: 1.5em;
-    height: 1.5em;
-    margin-bottom: 0.5em;
-    cursor: pointer;
-}
-
-footer .outro-cliente{
+footer .pagamento{
     display: flex;
     flex-direction: column;
 }
 
-footer .outro-cliente h5{
-    margin-bottom: 2em;
+footer .pagamento #bancos{
+    display: flex;
+    flex-flow: wrap;
+    width: 200px;
+    
 }
 
-footer .outro-cliente img{
-    margin-bottom: 1em;
-    width: 4em;
-    height: 3em;
-    cursor: pointer;
-}
-
-footer .direitos-reservados{
+footer .redes{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 2em;
 }
 
-footer .direitos-reservados hr {
-    width: 80%; 
+footer .redes a:hover{
+    color: rgb(255,96,61) ;
+}
+
+footer .atendimento2{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .atendimento2 #aplicativo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer hr{
+    width: 80%;
     margin: 10px auto;
     border: none;
-    border-top: 2px solid #a9a9a9; 
-}
-
-footer .direitos-reservados p {
-    font-size: 12px;
-    font-weight: bold;
+    border-top: 2px solid rgb(169,169,169);
 }
